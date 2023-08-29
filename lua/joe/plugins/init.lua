@@ -6,5 +6,6 @@ return {
 -- use "<leader>sm" to maximize size and agian to toggle
   "tpope/vim-surround", -- add, delete, change surroundings (it's awesome)
   "inkarkat/vim-ReplaceWithRegister", -- replace with register contents using motion (gr + motion)
+  "nvim-lualine/lualine.nvim", -- statusline
   -- "github/copilot.vim",
 }
