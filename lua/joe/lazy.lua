@@ -11,7 +11,7 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ { import = "joe.plugins" } }, {
+require("lazy").setup({ { import = "joe.plugins" }, { import = "joe.plugins.lsp" } }, {
   concurrency = 4,
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
