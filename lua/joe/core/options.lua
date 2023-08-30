@@ -13,7 +13,7 @@ opt.expandtab = true -- expand tab to spaces
 opt.autoindent = true -- copy indent from current line when starting new one
 
 -- mouse
-opt.mouse ="a"
+opt.mouse = "a"
 
 -- line wrapping
 opt.wrap = false -- disable line wrapping
@@ -45,3 +45,6 @@ vim.o.autoread = true
 
 -- Autom. save file before some action
 vim.o.autowrite = true
+
+-- turn off swapfile
+opt.swapfile = false

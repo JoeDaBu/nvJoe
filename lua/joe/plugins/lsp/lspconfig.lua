@@ -4,7 +4,7 @@ return {
 	dependencies = {
 		"jose-elias-alvarez/typescript.nvim",
 		"hrsh7th/cmp-nvim-lsp",
-                "smjonas/inc-rename.nvim",
+		"smjonas/inc-rename.nvim",
 	},
 	config = function()
 		-- import lspconfig plugin
@@ -63,9 +63,8 @@ return {
 			opts.desc = "Restart LSP"
 			keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts) -- mapping to restart lsp if necessary
 
-                        opts.desc = "Outline Toggle"
-                        keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
-
+			opts.desc = "Outline Toggle"
+			keymap.set("n", "<leader>o", "<cmd>LSoutlineToggle<CR>", opts) -- see outline on right hand side
 
 			-- typescript specific keymaps (e.g. rename file and update imports)
 			if client.name == "tsserver" then
@@ -129,25 +128,25 @@ return {
 			on_attach = on_attach,
 		})
 
-                -- configure rust server
+		-- configure rust server
 		lspconfig["rust_analyzer"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-                -- configure json server
+		-- configure json server
 		lspconfig["jsonls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-                -- configure sql server
+		-- configure sql server
 		lspconfig["sqlls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
 
-                -- configure python server
+		-- configure python server
 		lspconfig["jedi_language_server"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,

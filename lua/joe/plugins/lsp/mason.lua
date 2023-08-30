@@ -22,16 +22,16 @@ return {
 			ensure_installed = {
 				"jdtls",
 				"tsserver",
-                                "terraformls"
+				"terraformls",
 				"html",
 				"cssls",
 				"jsonls",
 				"lua_ls",
 				"clangd",
-                                "sqlls",
+				"sqlls",
 				"jedi_language_server",
-                                "graphql",
-                                "rust_analyzer",
+				"graphql",
+				"rust_analyzer",
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true, -- not the same as ensure_installed
@@ -43,15 +43,15 @@ return {
 				"prettierd", -- ts/js formatter
 				"stylua", -- lua formatter
 				"eslint_d", -- ts/js linter
-                                "checkstyle", -- java linter
-                                "tsc", -- typescript debugger
-                                "cppcheck", -- analysis of C and C++
-                                "ruff",  -- python linter
-                                "black", -- python code formatter
-                                "isort", -- python import sorter
-                                "rustfmt", -- rust formatter
-                                "pg_format", -- postgres and sql formatter  
-                                -- no terraform setup
+				"checkstyle", -- java linter
+				"tsc", -- typescript debugger
+				"cppcheck", -- analysis of C and C++
+				"ruff", -- python linter
+				"black", -- python code formatter
+				"isort", -- python import sorter
+				"rustup", -- rust formatter
+				"pg_format", -- postgres and sql formatter
+				-- no terraform setup
 			},
 			-- auto-install configured servers (with lspconfig)
 			automatic_installation = true,
