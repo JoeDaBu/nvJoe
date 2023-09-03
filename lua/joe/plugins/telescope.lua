@@ -4,16 +4,14 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-		"nvim-telescope/telescope-ui-select.nvim",
 		"nvim-tree/nvim-web-devicons",
 	},
 	config = function()
 		local telescope = require("telescope")
 		local actions = require("telescope.actions")
-		-- import telescope-ui-select safely
-		local themes = require("telescope.themes")
 		telescope.setup({
 			defaults = {
+				path_display = { "truncate " },
 				mappings = {
 					i = {
 						["<C-k>"] = actions.move_selection_previous, -- move up the list
@@ -23,14 +21,8 @@ return {
 					},
 				},
 			},
-			extensions = {
-				["ui-select"] = {
-					themes.get_dropdown({}),
-				},
-			},
 		})
 
 		telescope.load_extension("fzf")
-		telescope.load_extension("ui-select")
 	end,
 }

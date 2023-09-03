@@ -5,13 +5,13 @@ return {
 		"jayp0521/mason-null-ls.nvim",
 	},
 	config = function()
-		-- import mason plugin safely
+		-- import mason
 		local mason = require("mason")
 
-		-- import mason-lspconfig plugin safely
+		-- import mason-lspconfig
 		local mason_lspconfig = require("mason-lspconfig")
 
-		-- import mason-null-ls plugin safely
+		-- import mason-null-ls
 		local mason_null_ls = require("mason-null-ls")
 
 		-- enable mason

@@ -37,9 +37,6 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 opt.iskeyword:append("-") -- consider string-string as whole word
 
--- Enable highlight on search
-vim.o.hlsearch = true
-
 -- Autom. read file when changed outside of Vim
 vim.o.autoread = true
 

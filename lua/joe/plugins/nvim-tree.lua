@@ -11,8 +11,13 @@ return {
 	},
 	config = function()
 		require("nvim-tree").setup({
+			view = {
+				relativenumber = true,
+			},
 			renderer = {
-				highlight_git = true,
+				indent_markers = {
+					enable = true,
+				},
 				icons = {
 					show = {
 						git = true,
